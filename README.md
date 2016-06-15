@@ -65,6 +65,5 @@ sudo python mydetection.py -i lo -r noplanlife.pcap  "dst 127.0.0.1" :
  if found it prints the nessecaary info and counts the number of attacks. When finised, the program returns number of decteced attacks.
 
  If instead you pressed anything other than 'L' , it sniffs directly in the interface card which sniff on the packts Online.
-  (note I neglegted any previouslly recieved packts because I want to see it as fresh as possible and not to let previous attacks be  confused by new ones).
+ (note I neglegted any previouslly recieved packts because I want to see it as fresh as possible and not to let previous attacks be confused by new ones).
  Moreover, while sniffing it will have the filter "dst 127.0.0.1" running so in this case you only see the distnation ip of 127.0.0.1.
-======
