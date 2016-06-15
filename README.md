@@ -24,7 +24,7 @@ Injection:
           -i, --interface  interface of network device to listen on
           -r, --regex      regular expression to match the request packets for being spoofed
           -d, --datafile   raw data to be used as TCP payload of the spoofed response
-======
+
 Note:
 
 
@@ -54,16 +54,17 @@ usage:                -r <file> expression
 	  -h, --help       show this help message and exit
           -i, --interface  interface of network device to listen on
           -r, --pcap       captured file to be inspected for MotS
-======
+
 
 Attached is a file that you can Run on it (file inwhich is supplied in the -r option)
 
 Examples:
 sudo python mydetection.py -i lo -r noplanlife.pcap  "dst 127.0.0.1" :
       It will ask then to either use the supplied file (which is actually a TCP dump File) or using the interface directly to sniff on it.
-         If you press 'L' the code sniff offline on the pcap file and checks for any suspecious attacks in the supplied TCP transactions
-         if found it prints the nessecaary info and counts the number of attacks. When finised, the program returns number of decteced attacks.
+        If you press 'L' the code sniff offline on the pcap file and checks for any suspecious attacks in the supplied TCP transactions
+        if found it prints the nessecaary info and counts the number of attacks. When finised, the program returns number of decteced attacks.
 
 	 If instead you pressed anything other than 'L' , it sniffs directly in the interface card which sniff on the packts Online.
-         (note I neglegted any previouslly recieved packts because I want to see it as fresh as possible and not to let previous attacks be  confused by new ones).
+        (note I neglegted any previouslly recieved packts because I want to see it as fresh as possible and not to let previous attacks be  confused by new ones).
         Moreover, while sniffing it will have the filter "dst 127.0.0.1" running so in this case you only see the distnation ip of 127.0.0.1.
+======
