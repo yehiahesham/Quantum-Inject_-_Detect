@@ -10,12 +10,16 @@ All the inputs are validated and printed out in the detection and injection so t
 
 
 To Compile the Server and Client:
- g++ simple_Server.cpp -o server
- g++ Simple_Client.cpp -o client
+
+
+		 g++ simple_Server.cpp -o server
+		 g++ Simple_Client.cpp -o client
 
 To run the Server and Client :
-./server
-./client
+
+
+		./server
+		./client
 
 ======
 Injection:
@@ -35,7 +39,9 @@ Note:
  Otherthan than that ,  the forging and injecting themselves are working.
 
 Example:
- sudo python myinjection.py -i lo -r 'nop..nlife' -d test.dat "dst 127.0.0.1"
+
+
+		 sudo python myinjection.py -i lo -r 'nop..nlife' -d test.dat "dst 127.0.0.1"
 
  This will sniff  on the loopback interface serching for packts with distination of ip 127.0.0.1.
   The regular expression here is the 'nop..nlife' which as said before is ignored due to problems.
@@ -59,7 +65,9 @@ usage:                -r <file> expression
 Attached is a file that you can Run on it (file inwhich is supplied in the -r option)
 
 Examples:
-sudo python mydetection.py -i lo -r noplanlife.pcap  "dst 127.0.0.1" :
+
+
+		sudo python mydetection.py -i lo -r noplanlife.pcap  "dst 127.0.0.1" :
  It will ask then to either use the supplied file (which is actually a TCP dump File) or using the interface directly to sniff on it.
  If you press 'L' the code sniff offline on the pcap file and checks for any suspecious attacks in the supplied TCP transactions
  if found it prints the nessecaary info and counts the number of attacks. When finised, the program returns number of decteced attacks.
