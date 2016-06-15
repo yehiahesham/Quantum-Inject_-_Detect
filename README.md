@@ -25,7 +25,7 @@ To run the Server and Client :
 Injection:
 
 	 
-         -h, --help       show this help message and exit
+          -h, --help       show this help message and exit
           -i, --interface  interface of network device to listen on
           -r, --regex      regular expression to match the request packets for being spoofed
           -d, --datafile   raw data to be used as TCP payload of the spoofed response
@@ -59,8 +59,8 @@ usage: -i <interface> -r <file> expression,OR,
 usage:                -r <file> expression
 
 	
-         -h, --help       show this help message and exit
-         -i, --interface  interface of network device to listen on
+          -h, --help       show this help message and exit
+          -i, --interface  interface of network device to listen on
           -r, --pcap       captured file to be inspected for MotS
 
 
